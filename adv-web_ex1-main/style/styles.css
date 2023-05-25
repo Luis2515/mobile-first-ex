@@ -1,0 +1,475 @@
+/* This will effect everything from 0 to 576px */
+@import url("normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+h1,
+p,
+a {
+  font-family: "Open Sans";
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+header {
+  justify-content: space-evenly;
+}
+
+nav {
+  justify-content: space-between;
+  width: 86%;
+  padding: 1rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2a2a2a;
+  padding: 0 0.5rem;
+}
+
+nav a:hover {
+  color: #d66363;
+}
+
+.main-links {
+  width: 66.2%;
+  display: flex;
+  align-items: center;
+}
+
+.main-links li {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #2a2a2a;
+  border-right: 1px solid #2a2a2a;
+}
+
+.main-links li:last-child {
+  border: none;
+}
+
+.social {
+  width: 15.4%;
+  display: flex;
+  align-items: center;
+}
+
+.social img {
+  width: 23px;
+}
+
+.social li {
+  padding-right: 0.125rem;
+}
+
+.nav {
+  justify-content: space-between;
+  margin: 1em;
+}
+
+nav .menu {
+  padding: 2rem;
+}
+
+.bg-image {
+  background-image: url("../image/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 18rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.content {
+  background-color: #d8e4d7e6;
+  width: 100%;
+  justify-content: center;
+  padding: 1rem 1rem;
+}
+
+.content h1 {
+  text-align: right;
+  font-family: "Oswald";
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #7c7c7c;
+}
+
+.content .title h1 {
+  padding-right: 1rem;
+  border-right: 3px solid #7c7c7c;
+}
+
+h1 .small-text {
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+.two-column {
+  padding: 3.125rem 0.5rem 3.5rem;
+}
+
+.two-column img {
+  display: block;
+  margin: 0 auto;
+  height: 6rem;
+}
+
+.two-column p {
+  font-weight: 400;
+  text-align: center;
+  font-size: 1rem;
+  color: #7c7c7c;
+  padding-bottom: 1.25rem;
+}
+
+.two-column h1 {
+  font-weight: 700;
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #7c7c7c;
+  padding: 2.125rem 0;
+}
+
+.two-column a {
+  color: #7c7c7c;
+}
+
+.pizza-ad {
+  background-image: url("../image/pizza_ad.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 33.25rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.pizza-ad h1 {
+  font-family: "Oswald";
+  font-weight: lighter;
+  font-size: 3.75rem;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #d8e4d7cc;
+  padding: 1rem;
+  color: #130c0e;
+}
+
+.pizza-ad span {
+  font-weight: bold;
+}
+
+.locations h1 {
+  background-color: #d8e4d7;
+  font-family: "Oswald";
+  font-weight: lighter;
+  font-size: 3.75rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #7c7c7c;
+  margin: 1.875rem 0 0 0;
+  padding: 1rem 0;
+}
+
+.locations .map {
+  background-image: url("../image/map.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 23.125rem;
+}
+
+footer {
+  background-color: #000;
+  padding-bottom: 2.25rem;
+}
+
+footer .company-name h1 {
+  text-align: center;
+  font-family: "Oswald";
+  font-weight: lighter;
+  color: #7c7c7c;
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding: 1rem 0 0 0;
+}
+
+footer .company-name p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1rem;
+  color: #7c7c7c;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.locations-footer {
+  justify-content: space-around;
+  padding: 2rem 0 4rem;
+}
+
+.locations-footer .location-1,
+.location-2 p {
+  color: #7c7c7c;
+  line-height: 1.5rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.locations-footer .location-1 a,
+.location-2 a {
+  color: #7c7c7c;
+}
+
+footer hr {
+  background-color: #7c7c7c;
+  margin: 0;
+  border: 0;
+  height: 0.25rem;
+  width: 75%;
+  margin: 0 auto;
+}
+
+footer form {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.mailing-list h1 {
+  color: #7c7c7c;
+  font-family: "Oswald";
+  font-weight: lighter;
+  text-align: center;
+  padding: 2.125rem 0 1.5rem;
+  text-transform: uppercase;
+}
+
+.mailing-list input[type="text"] {
+  width: 320px;
+}
+
+.tablet {
+  display: none;
+}
+
+.large-screen {
+  display: none;
+}
+
+.large-screen-hero {
+  display: none;
+}
+
+.gallery {
+  display: none;
+}
+
+/* Media Queries */
+@media (min-width: 576px) /* for mobile */ {
+}
+@media (min-width: 768px) /* for tablets */ {
+  nav {
+    padding: 1rem;
+  }
+
+  .two-column .pizza p,
+  .two-column .scooter p {
+    padding: 0 1rem 1rem;
+  }
+
+  .no-laptop {
+    width: 100%;
+  }
+
+  .tablet {
+    display: block;
+  }
+
+  .gallery img {
+    width: 50%;
+  }
+
+  .gallery .tablet-img {
+    display: none;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .no-mobile {
+    display: block;
+  }
+
+  .large-screen-hero {
+    display: none;
+  }
+}
+@media (min-width: 992px) /* for laptops */ {
+  nav {
+    padding: 1rem;
+  }
+  .pizza-ad {
+    display: none;
+  }
+
+  .gallery {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .no-mobile-tablet {
+    display: block;
+    align-items: center;
+    width: 100%;
+    margin: auto 0;
+    justify-content: end;
+  }
+
+  .no-laptop {
+    display: none;
+  }
+
+  .nav .links {
+    justify-content: end;
+  }
+
+  .nav .links a {
+    color: #000;
+    text-decoration: none;
+    font-family: "Open Sans";
+  }
+
+  .nav .links a:hover {
+    color: #d66363;
+  }
+
+  .nav ul li {
+    list-style-type: none;
+    padding-left: 1rem;
+  }
+}
+@media (min-width: 1200px) /* for large devices */ {
+  .menu {
+    display: none;
+  }
+
+  nav {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .gallery img {
+    width: 25%;
+  }
+
+  .gallery .tablet-img {
+    display: block;
+  }
+
+  .bg-image .content h1 {
+    font-size: 2.5rem;
+  }
+
+  .two-column {
+    align-items: flex-end;
+  }
+
+  .bg-image {
+    background-image: url("../image/hero.jpg");
+    height: 47.25rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .no-large {
+    display: none;
+  }
+
+  .large-screen {
+    display: inline-block;
+    display: flex;
+  }
+
+  .large-screen-hero {
+    display: block;
+    background-color: #130c0ecc;
+    height: 100%;
+    width: 40%;
+    padding-top: 8.75rem;
+    padding-right: 6.25rem;
+    line-height: 6rem;
+  }
+
+  .large-screen-hero h1 {
+    font-size: 4rem;
+    color: #ffffff;
+    font-family: "Oswald";
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-align: right;
+  }
+
+  .large-screen-hero p {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 3rem;
+    padding-top: 1.5rem;
+  }
+
+  .large-screen-hero p span {
+    font-size: 5rem;
+  }
+
+  .large-screen-hero a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #ffffff;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .large-screen-hero a:hover {
+    color: #d66363;
+    border-color: #d66363;
+  }
+
+  .two-column {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .gallery {
+    margin-bottom: 3rem;
+  }
+
+  .locations {
+    display: none;
+  }
+}
